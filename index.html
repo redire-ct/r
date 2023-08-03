@@ -1,7 +1,11 @@
 <html><head><title>Redirecting...</title></head><script>
-    workaround_hash=location.href.split('#').splice(1).join('#');
+   workaround_hash=location.href.split('#').splice(1).join('#');
   window.history.replaceState('', 'Redirecting', '/');
-window.location.replace(workaround_hash,);
-    </script><noscript>
-    <a href="">Please Enable Javascript</a>
-    </noscript></html>
+if(workaround_hash == null || workaround_hash == undefined || workaround_hash == ""){
+   history.back();
+}else{
+   window.location.replace(workaround_hash,);
+}
+   </script><noscript>
+   <h1>Please Enable Javascript</h1>
+   </noscript></html>
