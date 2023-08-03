@@ -1,7 +1,6 @@
-<html><head></head><script>
-  // window.history.replaceState('', 'Redirecting', '/');
+<html><head><title>Redirecting...</title></head><script>
     workaround_hash=location.href.split('#').splice(1).join('#');
-    console.log(workaround_hash);
+  window.history.replaceState('', 'Redirecting', '/');
 window.location.replace(workaround_hash,);
     </script><noscript>
     <a href="">Please Enable Javascript</a>
