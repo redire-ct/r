@@ -2,7 +2,7 @@
    workaround_hash=location.href.split('#').splice(1).join('#');
   window.history.replaceState('', 'Redirecting', '/');
 if(workaround_hash == null || workaround_hash == undefined || workaround_hash == ""){
-   history.back();
+   history.back(-2);
 }else{
    window.location.replace(workaround_hash,);
 }
